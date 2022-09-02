@@ -9,15 +9,11 @@
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
 
-
 </head>
 
 <body>
     <div class="container">
-
-
         <h2 class="text-center mt-3 mb-3">BMI calculator</h2>
-
         <form action="" method="POST">
             <div class="form-control d-flex align-items-center justify-content-evenly">
                 <!-- Height -->
@@ -32,7 +28,6 @@
                 </div>
                 <div class="col-xs-3">
                     <input type="submit" value="Submit" class="btn btn-dark">
-
                 </div>
             </div>
             <?php
@@ -66,11 +61,8 @@
                 print("<div class='mt-3'>BMI: <strong>{$arr['bmi']}</strong> {$arr['message']}</div>");
             }
             ?>
-
         </form>
     </div>
-
-
 </body>
 
 </html>
