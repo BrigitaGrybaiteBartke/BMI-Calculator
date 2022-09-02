@@ -45,20 +45,20 @@
                     $bmiIndex = round($weight / ($normalizedHeight * $normalizedHeight), 2);
                     // Set message
                     if ($bmiIndex < 18.5) {
-                        $message = '<p>You are underweight!</p>';
+                        $message = "<p class='mt-3'>You are underweight!</p><p>BMI: <strong>{$bmiIndex}</strong></p>";
                     } else if ($bmiIndex >= 18.5 and $bmiIndex <= 24.9) {
-                        $message = '<p>You have normal weight!</p>';
+                        $message = "<p class='mt-3'>You have normal weight!</p><p>BMI: <strong>{$bmiIndex}</strong></p>";
                     } else {
-                        $message = '<p>You are obese!</p>';
+                        $message = "<p class='mt-3'>You are obese!</p><p>BMI: <strong>{$bmiIndex}</strong></p>";
                     }
                 }
 
                 $arr = array(
                     "bmi" => $bmiIndex,
-                    "message" => $message
+                    "message" => $message,
                 );
 
-                print("<div class='mt-3'>BMI: <strong>{$arr['bmi']}</strong> {$arr['message']}</div>");
+                print($arr["message"]);
             }
             ?>
         </form>
